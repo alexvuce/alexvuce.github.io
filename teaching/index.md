@@ -1,6 +1,6 @@
 ```
-layout: default # uses site's layout
-title: Teaching
+#layout: default # uses site's layout
+#title: Teaching
 ```
 
 # Teaching Resources

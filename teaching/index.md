@@ -1,2 +1,2 @@
 # Teaching Resources
-- **[Financial Analytics](/teaching/dab-304)**
+- **[Healthcare Analytics](/teaching/dab-304)**

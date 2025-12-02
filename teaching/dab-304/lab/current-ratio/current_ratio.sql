@@ -31,9 +31,9 @@ WITH fc AS (
     FROM fact
 ), base AS (
     SELECT 
-        fc.health_facility_desc,
-        fp.accounting_period,
-        pa.pa_group_2_code,
+        health_facility_desc,
+        accounting_period,
+        pa_group_2_code,
         CASE 
             WHEN SUBSTRING(pa_code, 1, 1) = '1' AND SUBSTRING(pa_code, 3, 3) <> '355' THEN 'balance in 1*'
             WHEN SUBSTRING(pa_code, 1, 1) = '1' AND SUBSTRING(pa_code, 3, 3) = '355' THEN 'balance in 1~355'
@@ -45,9 +45,9 @@ WITH fc AS (
     INNER JOIN fp ON fact.fiscal_period_id = fp.fiscal_period_id
     INNER JOIN pa ON fact.pa_id = pa.pa_id
     GROUP BY 
-        fc.health_facility_desc,
-        fp.accounting_period,
-        pa.pa_group_2_code,
+        health_facility_desc,
+        accounting_period,
+        pa_group_2_code,
         CASE 
             WHEN SUBSTRING(pa_code, 1, 1) = '1' AND SUBSTRING(pa_code, 3, 3) <> '355' THEN 'balance in 1*'
             WHEN SUBSTRING(pa_code, 1, 1) = '1' AND SUBSTRING(pa_code, 3, 3) = '355' THEN 'balance in 1~355'

@@ -4,6 +4,6 @@ This lab will rely on a synthetic data set and a sample `.sql` file. The quantit
 
 ```math
 \frac{\text{Current Assets}}{\text{Current Liabilities}} 
-```/
+```
 
 is called *the current ratio*.

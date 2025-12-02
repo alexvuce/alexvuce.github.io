@@ -1,25 +1,14 @@
-title: "My Math Site"
-
+title: "My Site"
 description: "A GitHub Pages site with LaTeX math support"
-
 theme: minima
 
-
 # Ensure Jekyll processes Markdown correctly
-
 markdown: kramdown
-
 kramdown:
-
   math_engine: mathjax
-
   input: GFM
 
-
 # Include scripts (MathJax) in the head
-
 include:
-
   - _includes
-
   - _layouts

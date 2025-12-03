@@ -1,8 +1,0 @@
-jupyter
-numpy
-pandas
-polars
-scikit-learn
-seaborn
-statsmodels
-torch
